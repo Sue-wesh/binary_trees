@@ -10,8 +10,8 @@
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 		const binary_tree_t *second)
 {
-	binary_tree_t first_par = first->parent;
-	binary_tree_t second_par = second->parent;
+	binary_tree_t *first_par = first->parent;
+	binary_tree_t *second_par = second->parent;
 
 	if (first || second)
 	{
